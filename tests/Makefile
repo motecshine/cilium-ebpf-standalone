@@ -1,13 +1,13 @@
 # Copyright Authors of Cilium
 # SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 
-include ../../Makefile.defs
+ROOT_DIR := ..
 
 MAKEFLAGS += -r
 
-CLANG ?= clang
+CLANG ?= clang-17
 
-FLAGS := -I$(ROOT_DIR)/include -I$(ROOT_DIR)/bpf -D__NR_CPUS__=$(shell nproc --all) -O2 -g
+FLAGS := -I$(ROOT_DIR)/include -I$(ROOT_DIR)/ -D__NR_CPUS__=$(shell nproc --all) -O2 -g
 
 CLANG_FLAGS := ${FLAGS} --target=bpf -std=gnu99 -nostdinc
 # eBPF verifier enforces unaligned access checks where necessary, so don't

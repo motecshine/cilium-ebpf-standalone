@@ -4,3 +4,5 @@ compile_commands.json
 *.s
 .rebuild_all
 *.o
+*.d
+*.tmp
