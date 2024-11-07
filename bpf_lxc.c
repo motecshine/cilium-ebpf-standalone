@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright Authors of Cilium */
 
-#include "bpf/types_mapper.h"
+#include <bpf/types_mapper.h>
 #include <bpf/ctx/skb.h>
 #include <bpf/api.h>
 #include <linux/in.h>

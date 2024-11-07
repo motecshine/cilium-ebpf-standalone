@@ -1,5 +1,6 @@
 {
-    "files.associations": {
-        "skb.h": "c"
-    }
+    "clangd.path": "/usr/bin/clangd-17",
+    "clangd.arguments": [
+        "--log=verbose"
+    ],
 }
